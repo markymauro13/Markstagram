@@ -14,6 +14,9 @@ public class ParseApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        //Register your parse models
+        ParseObject.registerSubclass(Post.class);
+
        // ParseObject.registerSubclass(Post.class); this line of code is not working. Post.class seems to be unrecognizeable
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId("HCp9uApQ3sKsgkzYNGoRfXMhCYmXfVQPHInC06R9")
