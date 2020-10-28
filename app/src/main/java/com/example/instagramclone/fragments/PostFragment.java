@@ -75,7 +75,6 @@ public class PostFragment extends Fragment {
                     Log.i(TAG, "Post: " + post.getDescription() + ", username: " + post.getUser().getUsername());
                 }
                 allPosts.addAll(posts);
-                adapter.notifyDataSetChanged();
             }
         });
     }
